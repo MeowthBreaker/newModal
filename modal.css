@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 5000px;
+}
+
+.msg-block-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.msg-block-container::before {
+  display: block;
+
+  content: "";
+  background-color: gray;
+  opacity: 0.2;
+
+  width: 100vw;
+  height: 100vh;
+
+
+  position: fixed;
+
+  z-index: 1;
+}
+
+.msg-block {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  background-color: white;
+
+  z-index: 2;
+
+  width: fit-content;
+  height: fit-content;
+}
+
+.msg-block-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.alert-button {
+  padding: 5px 10px;
+}
